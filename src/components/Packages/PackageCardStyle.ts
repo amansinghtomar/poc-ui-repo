@@ -30,6 +30,12 @@ export const Cards = styled.div`
 	padding: 1rem;
 	margin-bottom: 2rem;
 	width: 30%;
+
+	@media(max-width: 480px) {
+    width: 100%;
+		overflow: hidden;
+  }
+	
 `;
 
 export const CardItem = styled.div`
@@ -51,13 +57,8 @@ export const CardItem = styled.div`
 `;
 
 export const CardImage = styled.div`
-	height: 200px;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	border-radius: 6px 6px 0px 0px;
-	opacity: 0.91;
+	height:300px;
+	width:100%;
 `;
 
 export const CardInfo = styled.div`

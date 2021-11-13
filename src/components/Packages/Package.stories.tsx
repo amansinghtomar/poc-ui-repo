@@ -17,7 +17,6 @@ const Template: ComponentStory<typeof PackageCard> = (args) => <PackageCard {...
 export const CardPage = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 CardPage.args = {
-  headerName: 'POC',
   productImage: 'https://source.unsplash.com/featured/?mountains',
   productTitle: 'A new trail you cant miss',
   productSubDetail: 'New Description is so good',

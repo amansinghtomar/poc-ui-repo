@@ -23,14 +23,11 @@ interface CardDetailsProps{
 
 function PackageCard({headerName,productImage,productTitle,productSubDetail,productButtonLabel}:CardDetailsProps) {
 	return (
-		<Wrapper>
-			<HeaderTab name={headerName} />
-			<Content>
+		
 				<Cards>
 					<CardItem>
 						<CardImage>
-              <ProductImage img={productImage} />
-  
+              <ProductImage img={productImage}  />
 						</CardImage>
 						<CardInfo>
               <Typography variant='h2' color='#32325d' label={productTitle} />
@@ -41,8 +38,7 @@ function PackageCard({headerName,productImage,productTitle,productSubDetail,prod
 						</CardBottom>
 					</CardItem>
 				</Cards>
-			</Content>
-		</Wrapper>
+		
 	);
 }
 

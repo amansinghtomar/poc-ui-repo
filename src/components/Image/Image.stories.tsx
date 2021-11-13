@@ -20,7 +20,6 @@ export const withImage = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 withImage.args = {
   img: '',
-  width: 100,
-  height:100
+ 
 };
 
