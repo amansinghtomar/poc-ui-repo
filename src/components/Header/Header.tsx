@@ -1,4 +1,5 @@
-import {Header} from './HeaderStyle'
+import React from 'react';
+import { Header } from './HeaderStyle'
 
 interface HeaderProps{
   name:String

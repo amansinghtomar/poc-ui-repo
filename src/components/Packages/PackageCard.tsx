@@ -1,3 +1,4 @@
+import React from 'react';
 import HeaderTab from "../Header/Header";
 import {
 	Wrapper,
@@ -10,7 +11,7 @@ import {
 } from "./PackageCardStyle";
 import ProductImage from "../Image/ProductImage";
 import Typography from "../Typography/Typography";
-import { Button } from "../../stories/Button";
+import  Button  from "../Button/button";
 
 interface CardDetailsProps{
   headerName: string,
@@ -20,7 +21,7 @@ interface CardDetailsProps{
   productButtonLabel:string
 }
 
-function CardsDetails({headerName,productImage,productTitle,productSubDetail,productButtonLabel}:CardDetailsProps) {
+function PackageCard({headerName,productImage,productTitle,productSubDetail,productButtonLabel}:CardDetailsProps) {
 	return (
 		<Wrapper>
 			<HeaderTab name={headerName} />
@@ -45,4 +46,4 @@ function CardsDetails({headerName,productImage,productTitle,productSubDetail,pro
 	);
 }
 
-export default CardsDetails;
+export default PackageCard;

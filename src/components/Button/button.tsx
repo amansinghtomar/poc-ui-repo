@@ -1,4 +1,6 @@
+import React from 'react';
 import { CustomButton } from './buttonStyle';
+
 
 interface ButtonProps{
   label: String

@@ -1,3 +1,4 @@
+import React from 'react';
 import { CustomImage } from './ProductStyle';
 
 export interface ImageProps{
