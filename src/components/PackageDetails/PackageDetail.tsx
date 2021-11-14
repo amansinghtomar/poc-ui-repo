@@ -28,4 +28,6 @@ function PackageDetail({productImage,productTitle,productSubDetail,productDescri
   )
 }
 
+
+
 export default PackageDetail

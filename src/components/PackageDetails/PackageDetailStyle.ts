@@ -5,22 +5,41 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 15px;
   display: flex;
+
+  @media (max-width: 940px) {
+  
+    flex-direction: column;
+    margin-top: 60px;
+  
+}
 `;
 
 export const LeftColumn = styled.div`
    width: 55%;
+
+   @media (max-width: 940px) {
+  
+
+  
+    width: 100%;
+  
+
+}
 
 `;
 
 export const RightColumn = styled.div`
    width: 45%;
   margin-top: 60px;
-  margin-left:40px
+  margin-left:40px;
+
+    @media (max-width: 940px) {
+    width: 100%;
+}
 `;
 
 export const CustomImage = styled.img`
   width: 100%;
-
   left: 0;
   top: 0;
   transition: all 0.3s ease;

@@ -1,8 +1,5 @@
 import React from 'react';
-import HeaderTab from "../Header/Header";
 import {
-	Wrapper,
-	Content,
 	Cards,
 	CardItem,
 	CardImage,
@@ -14,14 +11,14 @@ import Typography from "../Typography/Typography";
 import  Button  from "../Button/button";
 
 interface CardDetailsProps{
-  headerName: string,
   productImage: string,
   productTitle: string,
   productSubDetail: string,
-  productButtonLabel:string
+	productButtonLabel: string
+	onClick?: () => void;
 }
 
-function PackageCard({headerName,productImage,productTitle,productSubDetail,productButtonLabel}:CardDetailsProps) {
+function PackageCard({productImage,productTitle,productSubDetail,productButtonLabel,onClick}:CardDetailsProps) {
 	return (
 		
 				<Cards>
@@ -34,7 +31,7 @@ function PackageCard({headerName,productImage,productTitle,productSubDetail,prod
               <Typography variant='p' color='#000000' label={productSubDetail} />
 						</CardInfo>
 						<CardBottom>
-              <Button label={productButtonLabel} />
+					<Button label={productButtonLabel} onClick={onClick}/>
 						</CardBottom>
 					</CardItem>
 				</Cards>
